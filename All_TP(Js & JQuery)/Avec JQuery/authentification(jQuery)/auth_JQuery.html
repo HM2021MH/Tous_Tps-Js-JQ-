@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Authentification</title>
+
+   <style >
+     
+     body{
+          
+        background: linear-gradient(-90deg, rgb(114, 171, 255) 50%, rgb(44, 71, 132) 90%);
+        
+     }
+       .box
+       {
+        position: relative;
+        margin:  80px auto;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255,255, 255, 0.2);
+        border-radius: 6px;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+       }
+.button{
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #1c87c9; 
+      color: #fff;
+      }
+      .button:hover {
+      background: #26a9e0;
+      }
+      .form-control
+      {
+        border-radius: 5px;
+        height: 30px;
+        width: 220px;
+        display: flex;
+        
+      }
+
+   </style> 
+</head>
+<body>
+   <div class="box">
+     <div>
+        <h2> Login </h2>
+         <form onsubmit="login(event)">
+           
+             <label  class="form-label" > Username : </label>  
+             <input type="text" id="user" class="form-control" required > <br> 
+             <label  class="form-label" > Password: </label> 
+             <input type="password" id="pass" class="form-control" required> 
+             <input type="submit" class="button" value="Login"  > 
+             
+
+         </form>
+         <p> Need an <a href="creer_JQuery.html">Acount</a></p>
+       </div> 
+
+         
+    
+       
+
+
+
+   </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="auth_JQ.js"></script>  
+</body>
+</html>

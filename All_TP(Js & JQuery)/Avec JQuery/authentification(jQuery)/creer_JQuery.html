@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> S'inscrire</title>
+
+   <style >
+     
+     body{
+          
+        background: linear-gradient(-90deg, rgb(114, 171, 255) 50%, rgb(44, 71, 132) 90%);
+        font-family:;
+     }
+       .box
+       {
+        margin:  80px auto ;
+        width: 320px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255, 255, 0.2);
+        border-radius: 6px;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+       }
+.button{
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #1c87c9; 
+      color: #fff;
+      }
+      .button:hover {
+      background: #26a9e0;
+      }
+      .form-control
+      {
+        border-radius: 5px;
+        height: 30px;
+        width: 220px;
+        display: flex;
+        
+      }
+
+   </style> 
+</head>
+<body>
+   <div class="box">
+     <div>
+        <h2> S'inscrire </h2>
+         <form onsubmit="signup(event)">
+           
+             <label  class="form-label" > Username : </label>
+             <input type="text" id="userNew" class="form-control" required><br> 
+             <label  class="form-label"> Password: </label> 
+             <input type="password" id="pass1" class="form-control" required>
+             <div id="Msg1" ></div>
+              
+             <label  class="form-label" id="label" > Confirm password: </label> 
+             <input type="password" id="pass2" class="form-control" required> 
+             <div id="Msg2" ></div>
+            
+        <input type="submit" class="button" value="S'inscrire"  id="btn">
+            
+         </form>
+         <div style="margin-bottom: 6px;"> <a href="auth_JQuery.html" >Se connecter</a><div>
+       </div> 
+       
+ 
+   </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="auth_JQ.js"></script>  
+</body>
+</html>
